@@ -15,8 +15,22 @@ The following stereotypes are needed in order to generate the corresponding code
 ## Local build
 Run the following maven command to build the artifact locally:
 
+MAKE SURE THE FOLDER STRUCTURE IS AS FOLLOWS:
+
+some_folder
+ - application
+ - uml
+
+For Unix & MAC:
 ```
-mvn org.eclipse.acceleo:org.eclipse.acceleo.maven.launcher:acceleo-launcher
+cd uml
+./mvnw org.eclipse.acceleo:org.eclipse.acceleo.maven.launcher:acceleo-launcher
+```
+
+For Windows:
+```
+cd uml
+mvnw.cmd org.eclipse.acceleo:org.eclipse.acceleo.maven.launcher:acceleo-launcher
 ```
 
 ## Remote build
