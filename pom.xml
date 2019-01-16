@@ -58,33 +58,33 @@
 
 	<build>
 		<pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.acceleo</groupId>
-				<artifactId>org.eclipse.acceleo.maven.launcher</artifactId>
-				<version>${acceleo.version}</version>
-				<executions>
-					<execution>
-						<phase>process-resources</phase>
-						<goals>
-							<goal>acceleo-launcher</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<generatorClass>${generator.main.class}</generatorClass>
-					<model>${generator.uml.model}</model>
-					<outputFolder>${generator.output.directory}</outputFolder>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>at.fhv.cicd</groupId>
-						<artifactId>transformator</artifactId>
-						<version>0.0.1-SNAPSHOT</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-		</plugins>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.acceleo</groupId>
+					<artifactId>org.eclipse.acceleo.maven.launcher</artifactId>
+					<version>${acceleo.version}</version>
+					<executions>
+						<execution>
+							<phase>process-resources</phase>
+							<goals>
+								<goal>acceleo-launcher</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<generatorClass>${generator.main.class}</generatorClass>
+						<model>${generator.uml.model}</model>
+						<outputFolder>${generator.output.directory}</outputFolder>
+					</configuration>
+					<dependencies>
+						<dependency>
+							<groupId>at.fhv.cicd</groupId>
+							<artifactId>transformator</artifactId>
+							<version>0.0.1-SNAPSHOT</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+			</plugins>
 		</pluginManagement>
 	</build>
 </project>
