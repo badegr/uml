@@ -57,6 +57,7 @@
 	</pluginRepositories>
 
 	<build>
+		<pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.eclipse.acceleo</groupId>
@@ -84,5 +85,6 @@
 				</dependencies>
 			</plugin>
 		</plugins>
+		</pluginManagement>
 	</build>
 </project>
